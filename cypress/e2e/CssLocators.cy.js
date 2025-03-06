@@ -17,6 +17,7 @@ describe('CSS Locators', () => {
         .and('contain', 'T-Shirts');
 
         // use class and  attribute
+        
       
     });
   });

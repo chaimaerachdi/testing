@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-// configuration file here 
+
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {

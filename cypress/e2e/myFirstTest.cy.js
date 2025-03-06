@@ -11,17 +11,19 @@
 //   like a real user would.
 // -----------------------------------------
 
-describe('my first test ', () => {
+describe('my first test', () => {
     // mocha framework
     // ---run test-----------------
     // throw cypress app(npx cypress open) open the app but u have to  run it manually 
     // or cmd:1/-npx cypress  run
-    // for this command it will run utr tests automalitically after lunching the app 
+    // for this command it will run utr tests automalitically after lunching the app
+    beforeEach(()=>{
+        cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    })
     it('possitive test',()=>{
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         cy.title().should('eq','OrangeHRM')
     })
-
     it('negative test',()=>{
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         cy.title().should('eq','OrangeHRM123')
