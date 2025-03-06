@@ -55,6 +55,7 @@ describe('TestApecil', () => {
   cy.get('#telephoneMobile\\.indicatif-input').type('FRANCE ( 0033 ) {enter}');
   cy.get('input[id="telephoneMobile.numeroTelephone"]',{ timeout: 10000 }).type('06 12 34 56 78', { force: true });
 
+  //here write tests in the specification file
 
 
 
