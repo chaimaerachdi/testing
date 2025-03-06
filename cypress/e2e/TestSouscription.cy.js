@@ -53,9 +53,8 @@ describe('TestApecil', () => {
   // cy.get('').select('Option 2');
 // code telephonique
   cy.get('#telephoneMobile\\.indicatif-input').type('FRANCE ( 0033 ) {enter}');
-  cy.console.log('FRANCE ( 0033 ) is selected');
   cy.get('input[id="telephoneMobile.numeroTelephone"]',{ timeout: 10000 }).type('06 12 34 56 78', { force: true });
-  
+
 
 
 
